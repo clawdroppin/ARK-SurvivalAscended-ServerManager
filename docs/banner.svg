@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1a19"/>
+      <stop offset="0.55" stop-color="#0b0b0e"/>
+      <stop offset="1" stop-color="#09090b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#grid)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1279" height="319" rx="23.5" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+  <g transform="translate(96 72) scale(0.17)">
+    <rect x="64" y="64" width="896" height="896" rx="208" fill="#131316" stroke="#3f3f46" stroke-width="6"/>
+    <path d="M512 214 L770 774 H642 L596 668 H428 L382 774 H254 Z M512 418 L466 568 H558 Z" fill="url(#fg)"/>
+  </g>
+  <text x="300" y="150" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#ededf0" letter-spacing="-1.5">ASA Server Manager</text>
+  <text x="302" y="196" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#a1a1aa">The fast, modern way to run ARK: Survival Ascended dedicated servers</text>
+  <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="17" font-weight="600">
+    <rect x="302" y="226" width="150" height="34" rx="9" fill="#2dd4bf" fill-opacity="0.12" stroke="#2dd4bf" stroke-opacity="0.35"/>
+    <text x="377" y="248" text-anchor="middle" fill="#5eead4">334 settings</text>
+    <rect x="464" y="226" width="126" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="527" y="248" text-anchor="middle" fill="#d4d4d8">12 presets</text>
+    <rect x="602" y="226" width="168" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="686" y="248" text-anchor="middle" fill="#d4d4d8">One-click repair</text>
+    <rect x="782" y="226" width="140" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="852" y="248" text-anchor="middle" fill="#d4d4d8">Live RCON</text>
+    <rect x="934" y="226" width="180" height="34" rx="9" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="1024" y="248" text-anchor="middle" fill="#d4d4d8">Installer + portable</text>
+  </g>
+</svg>
