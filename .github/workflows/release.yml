@@ -42,7 +42,9 @@ jobs:
         with:
           name: ASA Server Manager ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
-          prerelease: ${{ startsWith(github.ref_name, 'v0.') }}
+          # Only tags like v1.2.0-beta are pre-releases; /releases/latest (README links) ignores pre-releases.
+          prerelease: ${{ contains(github.ref_name, '-') }}
+          make_latest: ${{ !contains(github.ref_name, '-') }}
           generate_release_notes: true
           body: |
             ## Downloads
