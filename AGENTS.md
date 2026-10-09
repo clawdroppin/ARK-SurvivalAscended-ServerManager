@@ -117,6 +117,8 @@ To audit coverage after a game patch: re-download the wiki page, re-parse it, th
 
 1. Bump the version in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`; add a `CHANGELOG.md` entry.
 2. Commit, then `git tag vX.Y.Z && git push --tags`.
+   - **Never delete or move a tag that already has a release** – GitHub turns that release into a hidden draft and the workflow then fails with "Too many retries". If a release is broken, bump the patch version and tag again.
+   - Tags with a hyphen (`v1.0.0-beta`) become pre-releases; plain tags become *latest* (the README's download links use `releases/latest/download/...`).
 3. `.github/workflows/release.yml` builds on `windows-latest` and publishes `ASA-Server-Manager-Setup.exe`, `ASA-Server-Manager.msi` and `ASA-Server-Manager-Portable.zip` (stable names so README links to `releases/latest/download/...` keep working).
 
 ## 9. Code style

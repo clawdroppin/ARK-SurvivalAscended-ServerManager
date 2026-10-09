@@ -1,6 +1,6 @@
 [package]
 name = "asa-server-manager"
-version = "0.1.0"
+version = "0.1.1"
 description = "ARK: Survival Ascended dedicated server manager"
 authors = ["clawdroppin"]
 license = "MIT"

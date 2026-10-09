@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.1
+
+- First downloadable release (v0.1.0 was tagged but its release packaging failed).
+- Release workflow: stable asset names, SHA256 checksums, only hyphenated tags are pre-releases.
+
 ## v0.1.0 – first public release
 
 - Desktop app (Tauri 2 + Rust + React) for ARK: Survival Ascended dedicated servers on Windows.
